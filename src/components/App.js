@@ -6,7 +6,7 @@ import "../styles/App.css";
 function Home() {
   return (
     <>
-      <div>You are home</div>
+      <h1>You are home</h1>
       <div data-testid="location-display">{useLocation().pathname}</div>
       <a href="/about">About</a>
       <Route exact path="/about" component={About} />
@@ -17,7 +17,7 @@ function Home() {
 function About() {
   return (
     <>
-      <div>You are on the about page</div>
+      <h1>You are on the about page</h1>
       <div data-testid="location-display">{useLocation().pathname}</div>
       <a href="/">Home</a>
       <Route exact="/" component={Home} />
