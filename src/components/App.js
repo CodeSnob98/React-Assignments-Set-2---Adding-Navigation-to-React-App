@@ -6,6 +6,11 @@ function Home() {
   return (
     <>
       <div>You are home</div>
+      <a href="/about">About</a>
+      <a href="/">Home</a>
+      <Route exact path="/about" component={About} />
+      <Route exact="/" component={Home} />
+      <Route exact path="*" component={() => "No match"} />
     </>
   );
 }
