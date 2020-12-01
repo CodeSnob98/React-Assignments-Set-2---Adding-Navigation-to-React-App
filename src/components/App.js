@@ -9,9 +9,6 @@ function Home() {
   return (
     <>
       <div>You are home</div>
-      {/* <a href="/about">About</a>
-      <Route exact path="/about" component={About} />
-      <Route exact path="*" component={() => "No match"} /> */}
     </>
   );
 }
@@ -19,9 +16,6 @@ function About() {
   return (
     <>
       <div>You are on the about page</div>
-      {/* <a href="/">Home</a>
-      <Route exact="/" component={Home} />
-      <Route exact path="*" component={() => "No match"} /> */}
     </>
   );
 }
