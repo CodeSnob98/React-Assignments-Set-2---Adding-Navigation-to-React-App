@@ -8,4 +8,9 @@ function generateCodeFromObject(obj) {
 
 module.exports = generateCodeFromObject;
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
