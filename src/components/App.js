@@ -1,7 +1,7 @@
 import React, { Component, useState } from "react";
 import { Route, Switch, useLocation, Link } from "react-router-dom";
 import "../styles/App.css";
-function LocationDisplay() {
+function LocationDisplayComponent() {
   let location = useLocation();
   return <div data-testid="location-display">{location.pathname}</div>;
 }
@@ -37,11 +37,11 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/" component={() => <div>No match</div>} />
         </Switch>
-        <LocationDisplay />
+        <LocationDisplayComponent />
       </div>
     );
   }
 }
 
 export default App;
-export const LocationDisplayComponent = LocationDisplay;
+export const LocationDisplay = LocationDisplayComponent;
